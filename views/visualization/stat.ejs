@@ -1,0 +1,56 @@
+<% include ../partial/navbar.ejs %>
+</br></br>
+<div class="row">
+  <div class="col-8">
+<div>
+    <img src="/assets/a-simple-plot.png">
+
+</div>
+
+  <div>
+<img src="/assets/posts.png">
+
+</div>
+<div>
+  <img src="/assets/groups.png">
+
+</div>
+<div>
+  <img src="/assets/groups_posts.png">
+
+</div>
+<% if (flag==1){  %>
+  <h2>details in <%=gnmae%></h2>
+<div>
+  <img src="/assets/connect.png" style="max-width: 100%; max-height: 100%;">
+
+</div>
+<div>
+  <img src="/assets/habd.png" ">
+
+</div>
+  <%}%>
+</div>
+
+<div class="col4">
+  <ul class="text-center" style="list-style: none">
+    <h5>groups</h5>
+    <hr>
+    <% groups.forEach((group)=>{ %>
+      <div class="row">
+         
+        <div class="col-10">
+          <br>
+          <a href="/stat/<%= group.name %>">
+            <%= group.name %>
+          </a>
+
+        </div>
+
+      </div>
+      <hr>
+
+      <% });  %>
+  </ul>
+</div>
+</div>

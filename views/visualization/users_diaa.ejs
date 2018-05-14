@@ -1,0 +1,40 @@
+<% include ../partial/navbar.ejs %>
+<div>
+<img src="/assets/graph.png"  style="max-width: 100%; max-height: 100%;" >
+ 
+</div>
+</br></br></br></br></br>
+<div class="col-4">
+    <ul class="text-center" style="list-style: none">
+        <h5>users in system</h5>
+        <hr>
+        <% users.forEach((user)=>{ %>
+            <%if (user.name!==user_id) { %>
+             
+
+                <div class="row">
+                    <div class="col-2 ">
+                        <img class="imgBorder mb-3" height="90" width="90" src="<%= user.pic %>" style="
+                                                                                height: 71px;
+                                                                                width: 70px;
+                                                                                border: 1px solid white;
+                                                                                border-radius: 176px;
+                                                                                ">
+                    </div>
+                     
+                    <div class="col-10">
+                        <br>
+                        <a href="/visualize_users_diaa/<%= user.name %>">
+                            <%= user.name %>
+                        </a>
+                    
+                    </div>
+                    
+                    </div>
+                    <hr>
+                    
+                    <% };  %>
+                    <% });  %>
+                        </ul>
+                        </div>
+                    

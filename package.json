@@ -1,0 +1,39 @@
+{
+  "name": "node-easy-notes-app",
+  "version": "1.0.0",
+  "description": "Never miss a thing in Life. Take notes quickly. Organize and keep track of all your notes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "Mongoose",
+    "Notes"
+  ],
+  "author": "callicoder",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "child_process": "^1.0.2",
+    "connect-mongo": "^2.0.1",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "fs": "0.0.1-security",
+    "graphdracula": "^1.2.1",
+    "mongoose": "^5.0.11",
+    "node-localstorage": "^1.3.1",
+    "plotly": "^1.0.6",
+    "python-shell": "^0.5.0",
+    "raphael": "^2.2.7",
+    "urlencoded-parser": "^1.0.0",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
